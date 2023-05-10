@@ -1,0 +1,34 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.dashboard-header {
+    font-size: 1.5rem;
+}
+
+.dashboard-container .dashboard-header img {
+    height: 2.5rem;
+}
+
+.dashboard-container {
+    font-size: 1rem;
+}
+
+.dashboard-container img {
+    height: 1.2rem;
+}
