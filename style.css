@@ -1,11 +1,12 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
+    --bck-color: #ee0000;
 }
 
 ul {
@@ -25,11 +26,13 @@ li {
     gap: 3rem;
     font-weight: bold;
     font-size: 1rem;
-    background-color: #6b0323;
+    background-color: var(--bck-color);
+    padding: 0 1rem;
+    color: #191c1f;
 }
 
 .dashboard-header {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
@@ -43,13 +46,14 @@ li {
 
 
 .dashboard-container img {
-    height: 1.3rem;
+    height: 1.5rem;
 }
 
 .dashboard-menu  li {
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 10px;
+    font-size: 1.3rem;
 }
 
 .dashboard-settings li {
@@ -64,3 +68,118 @@ li {
   justify-self: center;
 }
 
+.main-container {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    padding: 0 5rem;
+}
+
+.main-top {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-top button {
+    width: 6rem;
+    height: 2.2rem;
+    text-align: center;
+    margin: 0 1rem -0.2rem 0;
+    border-radius: 2rem;
+    border: var(--bck-color);
+    background-color: var(--bck-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.main-top button:nth-child(3) {
+    margin-right: 0;
+}
+
+.main-top-first {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+
+.main-top-second {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+
+.main-top-second-left {
+    justify-self: left;
+    display: flex;
+    align-items: center;
+}
+
+.main-top-second-right {
+    justify-self: right;
+    display: flex;
+    align-items: center;
+}
+
+.main-top-second-left  span{
+    display: inline-block;
+}
+
+.main-top-second-left img {
+    width: 3.5rem;
+    height: auto;
+    margin-right: 1.5rem;
+    border-radius: 2rem;
+}
+
+.main-top-second p {
+    margin: 0;
+}
+
+.main-top-second .second-line {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.main-top-first-left {
+    justify-self: left;
+    display: flex;
+    align-items: center;
+}
+.main-top-first-left img {
+    margin-right: 1.5rem;
+}
+
+.main-top-first-left input {
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    background-color: #e3e3e3;
+    border: #e3e3e3;
+    font-size: 1rem;
+}
+
+.main-top-first-right {
+    justify-self: right;
+    display: flex;
+    align-items: center;
+}
+
+.main-top-first img {
+    height: 1.5rem;
+}
+
+.main-top-first-right img:nth-child(2) {
+    margin: 0 2.5rem;
+    width: 2.5rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.main-top-first-right span {
+    font-weight: 600;
+}
+
+.main-bottom {
+    background-color: var(--bck-color);
+}
