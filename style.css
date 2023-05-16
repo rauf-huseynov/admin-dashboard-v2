@@ -241,6 +241,7 @@ li {
 .announcements-title {
     padding: 0 1rem;
 }
+
 .announcement {
     margin: 8px 2px;
     border-radius: 12px;
@@ -298,6 +299,7 @@ li {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
 }
+
 .project-name {
     font-size: 1.2rem;
     font-weight: 600;
@@ -341,7 +343,3 @@ li {
     margin: 0;
     pad: 0;
 }
-
-
-
-
